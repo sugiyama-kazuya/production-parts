@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- form--1 -->
+    <section class="section__form">
+      <div class="container__form">
+        <h2 class="form__1__title">jQuery Validation Plugin</h2>
+        <form id="form" method="post" class="form__1" autocomplete nobalidate>
+          <p class="form__1__box">
+            <label for="name" class="form__1__label">氏名</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form__1__text"
+              autofocus
+              required
+            />
+          </p>
+          <p class="form__1__box">
+            <label
+              for="name-frigana"
+              class="form__1__label__name-frigana form__1__label"
+              >氏名（フリガナ）</label
+            >
+            <input
+              type="text"
+              name="name-frigana"
+              id="name-frigana"
+              class="form__1__text"
+            />
+          </p>
+          <p class="form__1__box">
+            <label for="email" class="form__1__label">Eメールアドレス</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form__1__text"
+              required
+            />
+          </p>
+          <p class="form__1__box">
+            <label for="re-email" class="form__1__label"
+              >Eメールアドレス（再入力）</label
+            >
+            <input
+              type="email"
+              name="reEmail"
+              id="re-email"
+              class="form__1__text"
+              required
+            />
+          </p>
+          <p class="form__1__box">
+            <label for="textarea" class="form__1__label">内容</label>
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+              class="form__1__textarea"
+              required
+            ></textarea>
+          </p>
+          <div class="form__1__btn__outer">
+            <button type="submit" class="form__1__btn">CONTACT</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end form--1 -->
+
+    <!-- form--2 -->
+    <!-- 参考記事:https://liginc.co.jp/348438 -->
+    <!-- vanila js でのバリデーション実装 上を参考-->
+    <section class="section__form mt-3">
+      <div class="container__form">
+        <h2 class="form__2__title">お問い合わせ</h2>
+        <form id="form-2" method="post" class="form__2" autocomplete nobalidate>
+          <p class="form__2__box">
+            <label for="name" class="form__2__label">氏名</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form__2__text"
+              autofocus
+              required
+            />
+            <p id="error"></p>
+          </p>
+          <p class="form__2__box">
+            <label
+              for="name-frigana"
+              class="form__2__label__name-frigana form__2__label"
+              >氏名（フリガナ）</label
+            >
+            <input
+              type="text"
+              name="name-frigana"
+              id="name-frigana"
+              class="form__2__text"
+            />
+          </p>
+          <p class="form__2__box">
+            <label for="email" class="form__2__label">Eメールアドレス</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form__2__text"
+              required
+            />
+          </p>
+          <p class="form__2__box">
+            <label for="re-email" class="form__2__label"
+              >Eメールアドレス（再入力）</label
+            >
+            <input
+              type="email"
+              name="reEmail"
+              id="re-email"
+              class="form__2__text"
+              required
+            />
+          </p>
+          <p class="form__2__box">
+            <label for="textarea" class="form__2__label">内容</label>
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+              class="form__2__textarea"
+              required
+            ></textarea>
+          </p>
+          <div class="form__2__btn__outer">
+            <button type="submit" class="form__2__btn">CONTACT</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end form--2 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./plugins/jquery-form-validation/jquery.validate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./plugins/jquery-form-validation/messages_ja.js"
+    ></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.kv {
+  &__img {
+    &-1 {
+      background-color: red;
+    }
+    &-2 {
+      background-color: blue;
+    }
+    &-3 {
+      background-color: brown;
+    }
+  }
+}

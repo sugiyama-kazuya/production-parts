@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.container {
+  &__burger-btn {
+    padding: 3rem;
+    position: relative;
+    background-color: #30373f;
+    height: 100vh;
+  }
+
+  &__form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background-color: rgb(95, 67, 50);
+    color: #fff;
+    border-radius: 3rem;
+  }
+
+  &__slider {
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+  }
+}

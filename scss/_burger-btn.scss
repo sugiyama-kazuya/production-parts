@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+// デフォルトのスタイルを削除
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*****************************/
+/* btn-1
+/*****************************/
+.burger-btn__1 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #f9d8ae;
+
+  &__bars {
+    position: relative;
+  }
+
+  &__bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 2px;
+    background-color: #f9d8ae;
+    transition: 0.3s;
+
+    &:nth-of-type(1) {
+      transform: translate(-50%, -8px);
+    }
+
+    &:nth-of-type(3) {
+      transform: translate(-50%, 6px);
+    }
+  }
+
+  &.burger-btn--active {
+    & .burger-btn__1__bar:nth-of-type(1) {
+      transform: rotate(45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      transition: 0.3s;
+    }
+    & .burger-btn__1__bar:nth-of-type(2) {
+      opacity: 0;
+      transition: 0.3s;
+    }
+    & .burger-btn__1__bar:nth-of-type(3) {
+      transform: rotate(-45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      transition: 0.3s;
+    }
+  }
+}
+.nav-menu {
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 50rem;
+  width: 40%;
+  visibility: hidden;
+  background: #fff;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 2;
+
+  ul {
+    padding-left: 2rem;
+    li {
+      list-style: none;
+    }
+  }
+
+  &.nav-menu--active {
+    visibility: visible;
+    transition: 0.2s;
+    opacity: 0.8;
+    right: 0;
+  }
+}
+
+/*****************************/
+/* btn-2
+/*****************************/
+.burger-btn__2 {
+  width: 48px;
+  height: 48px;
+
+  &__bars {
+    position: relative;
+  }
+
+  &__bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 2px;
+    background-color: #f9d8ae;
+    transition: 0.3s;
+
+    &:nth-of-type(1) {
+      transform: translate(-50%, -8px);
+    }
+
+    &:nth-of-type(3) {
+      transform: translate(-50%, 6px);
+    }
+  }
+
+  &.burger-btn--active {
+    & .burger-btn__2__bar:nth-of-type(1) {
+      transform: rotate(45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      transition: 0.3s;
+    }
+    & .burger-btn__2__bar:nth-of-type(2) {
+      opacity: 0;
+      transition: 0.3s;
+    }
+    & .burger-btn__2__bar:nth-of-type(3) {
+      transform: rotate(-45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      transition: 0.3s;
+    }
+  }
+}

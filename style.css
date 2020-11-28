@@ -1,0 +1,399 @@
+@charset "UTF-8";
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*****************************/
+/* btn-1
+/*****************************/
+.burger-btn__1 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #f9d8ae;
+}
+
+.burger-btn__1__bars {
+  position: relative;
+}
+
+.burger-btn__1__bar {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 18px;
+  height: 2px;
+  background-color: #f9d8ae;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__1__bar:nth-of-type(1) {
+  -webkit-transform: translate(-50%, -8px);
+          transform: translate(-50%, -8px);
+}
+
+.burger-btn__1__bar:nth-of-type(3) {
+  -webkit-transform: translate(-50%, 6px);
+          transform: translate(-50%, 6px);
+}
+
+.burger-btn__1.burger-btn--active .burger-btn__1__bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg) translate(-50%, 0);
+          transform: rotate(45deg) translate(-50%, 0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__1.burger-btn--active .burger-btn__1__bar:nth-of-type(2) {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__1.burger-btn--active .burger-btn__1__bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg) translate(-50%, 0);
+          transform: rotate(-45deg) translate(-50%, 0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 0;
+  right: -40%;
+  height: 50rem;
+  width: 40%;
+  visibility: hidden;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.nav-menu ul {
+  padding-left: 2rem;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu.nav-menu--active {
+  visibility: visible;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.8;
+  right: 0;
+}
+
+/*****************************/
+/* btn-2
+/*****************************/
+.burger-btn__2 {
+  width: 48px;
+  height: 48px;
+}
+
+.burger-btn__2__bars {
+  position: relative;
+}
+
+.burger-btn__2__bar {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 18px;
+  height: 2px;
+  background-color: #f9d8ae;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__2__bar:nth-of-type(1) {
+  -webkit-transform: translate(-50%, -8px);
+          transform: translate(-50%, -8px);
+}
+
+.burger-btn__2__bar:nth-of-type(3) {
+  -webkit-transform: translate(-50%, 6px);
+          transform: translate(-50%, 6px);
+}
+
+.burger-btn__2.burger-btn--active .burger-btn__2__bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg) translate(-50%, 0);
+          transform: rotate(45deg) translate(-50%, 0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__2.burger-btn--active .burger-btn__2__bar:nth-of-type(2) {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-btn__2.burger-btn--active .burger-btn__2__bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg) translate(-50%, 0);
+          transform: rotate(-45deg) translate(-50%, 0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container__burger-btn {
+  padding: 3rem;
+  position: relative;
+  background-color: #30373f;
+  height: 100vh;
+}
+
+.container__form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  background-color: #5f4332;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+.container__slider {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.mr-2 {
+  margin-right: 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/****************************************************************/
+/* form--1
+/****************************************************************/
+.form__1__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.form__1__box {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "..... error" "label form" / 40% 60%;
+}
+
+.form__1__box:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.form__1__box::first-child {
+  margin-top: 0;
+}
+
+.form__1__box .form__1__label {
+  grid-area: label;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__1__box .form__1__label::before {
+  content: "必須";
+  white-space: nowrap;
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 0.6rem;
+  background-color: #d77358;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form__1__box .form__1__label__name-frigana::before {
+  content: "　　";
+  background-color: transparent;
+}
+
+.form__1__box .form__1__text {
+  grid-area: form;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form__1__box .form__1__textarea {
+  grid-area: form;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form__1__box span {
+  grid-area: error;
+  font-size: 0.5rem;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.form__1__btn {
+  background-color: #fff;
+  border-radius: 100vh;
+  width: 15rem;
+  padding: 1rem;
+  color: #d77358;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__1__btn__outer {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+/****************************************************************/
+/* form--2
+/****************************************************************/
+.form__2__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.form__2__box {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "..... error" "label form" / 40% 60%;
+}
+
+.form__2__box:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.form__2__box::first-child {
+  margin-top: 0;
+}
+
+.form__2__box .form__2__label {
+  grid-area: label;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__2__box .form__2__label::before {
+  content: "必須";
+  white-space: nowrap;
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 0.6rem;
+  background-color: #d77358;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form__2__box .form__2__label__name-frigana::before {
+  content: "　　";
+  background-color: transparent;
+}
+
+.form__2__box .form__2__text {
+  grid-area: form;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form__2__box .form__2__textarea {
+  grid-area: form;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form__2__box span {
+  grid-area: error;
+  font-size: 0.5rem;
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 0.5rem;
+}
+
+.form__2__btn {
+  background-color: #fff;
+  border-radius: 100vh;
+  width: 15rem;
+  padding: 1rem;
+  color: #d77358;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__2__btn__outer {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.kv__img-1 {
+  background-color: red;
+}
+
+.kv__img-2 {
+  background-color: blue;
+}
+
+.kv__img-3 {
+  background-color: brown;
+}
+/*# sourceMappingURL=style.css.map */
