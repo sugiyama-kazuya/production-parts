@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -82,7 +87,7 @@
     <!-- vanila js でのバリデーション実装 上を参考-->
     <section class="section__form mt-3">
       <div class="container__form">
-        <h2 class="form__2__title">お問い合わせ</h2>
+        <h2 class="form__2__title">vanila.js</h2>
         <form id="form-2" method="post" class="form__2" autocomplete nobalidate>
           <p class="form__2__box">
             <label for="name" class="form__2__label">氏名</label>
@@ -94,7 +99,7 @@
               autofocus
               required
             />
-            <p id="error"></p>
+            <span id="error"></span>
           </p>
           <p class="form__2__box">
             <label

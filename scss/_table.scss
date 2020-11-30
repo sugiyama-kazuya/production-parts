@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.table__1 {
+  width: 60%;
+  margin: 2rem 0;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    // table-layout: fixed;
+    tr {
+      th,
+      td {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+      }
+      th {
+        background-color: lightblue;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.table__2 {
+  width: 60%;
+  margin: 2rem 0;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      th,
+      td {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+      }
+      th {
+        background-color: rgb(60, 60, 230);
+        text-align: center;
+        color: #fff;
+        width: 20%;
+      }
+    }
+  }
+}
