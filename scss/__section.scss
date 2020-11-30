@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 .section {
-  &__form {
+  &__table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-btn {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
   }
 }
